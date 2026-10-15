@@ -1,9 +1,18 @@
 .film-grid{grid-template-columns:1fr;gap:18px}
-.film-entry{display:grid;grid-template-columns:minmax(190px,29%) minmax(0,1fr);align-items:start;gap:0 24px;padding:16px;background:var(--paper-light);border-radius:18px;box-shadow:0 10px 28px rgba(45,68,48,.07)}
+.film-entry{display:grid;grid-template-columns:minmax(230px,32%) minmax(0,1fr);align-items:start;gap:0 26px;padding:16px;overflow:visible;background:var(--paper-light);border-radius:18px;box-shadow:0 10px 28px rgba(45,68,48,.07)}
 .film-entry:nth-child(3n+2),.film-entry:nth-child(even){transform:none}
 .film-entry:hover,.film-entry:focus-within,.film-entry:nth-child(3n+2):hover,.film-entry:nth-child(even):hover{transform:translateY(-2px)}
-.film-entry>.film-image-button{grid-column:1;grid-row:1 / span 2;aspect-ratio:16/9!important;overflow:hidden;border-radius:12px!important}
-.film-entry>.film-image-button img{width:100%;height:100%;object-fit:cover}
+.film-entry>.film-media{grid-column:1;grid-row:1 / span 2;min-width:0;position:sticky;top:96px}
+.film-entry>.film-media>.film-image-button{aspect-ratio:16/9!important;overflow:hidden;border-radius:12px!important}
+.film-entry>.film-media>.film-image-button img{width:100%;height:100%;object-fit:cover}
+.film-stills-title{margin:13px 0 7px}
+.film-stills-scroll{display:flex;flex-direction:column;gap:10px;max-height:min(46vh,420px);overflow-y:auto;overscroll-behavior:contain;padding:4px 10px;scrollbar-width:thin;scrollbar-color:var(--line-dark) transparent;border-radius:10px}
+.film-stills-scroll::-webkit-scrollbar{width:6px}
+.film-stills-scroll::-webkit-scrollbar-track{background:transparent}
+.film-stills-scroll::-webkit-scrollbar-thumb{background:var(--line-dark);border-radius:99px}
+.film-stills-scroll::-webkit-scrollbar-thumb:hover{background:#a9bba0}
+.film-stills-scroll .film-still{width:100%;flex:none}
+.film-stills-scroll .film-still img{aspect-ratio:16/9}
 .film-entry>.film-meta{grid-column:2;grid-row:1;margin:4px 0 12px;padding:0;gap:12px}
 .film-entry .film-meta h3{font-size:clamp(18px,2vw,24px)}
 .film-entry .film-meta p{font-size:12px}
@@ -20,7 +29,6 @@
 .film-review-notes strong{flex:none;color:var(--rust-dark);font-weight:700}
 .film-review-notes span{color:var(--muted)}
 .film-stills-title{margin:16px 0 9px;color:var(--ink-soft);font-family:var(--serif);font-size:13px;font-weight:600}
-.film-stills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 .film-still{padding:0;overflow:hidden;border:0;border-radius:8px;background:#dfe7d8;cursor:zoom-in}
 .film-still img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform .35s}
 .film-still:hover img{transform:scale(1.045)}
@@ -34,8 +42,8 @@
 .photo-caption{padding:0 14px}
 .photo-caption h3{margin:0;color:var(--ink);font-family:var(--serif);font-size:16px;font-weight:600;line-height:1.6}
 .photo-caption p{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.85}
-@media(max-width:800px){.film-entry{grid-template-columns:minmax(150px,34%) minmax(0,1fr);gap:0 16px}.film-review-notes{grid-template-columns:1fr}.film-stills{grid-template-columns:repeat(3,minmax(0,1fr))}.photo-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
-@media(max-width:560px){.film-entry{grid-template-columns:1fr;padding:12px}.film-entry>.film-image-button{grid-column:1;grid-row:1;aspect-ratio:16/9!important}.film-entry>.film-meta{grid-column:1;grid-row:2;margin:12px 2px 10px}.film-details{grid-column:1;grid-row:3}.film-synopsis{font-size:13px}.film-review-notes p{font-size:12px}.film-stills{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.film-still img{aspect-ratio:4/3}.photo-strip{gap:14px 11px}.photo-note-card{padding-bottom:12px}.photo-note-card .photo-label,.photo-caption{margin-left:0;margin-right:0;padding-left:10px;padding-right:10px}.photo-note-card .photo-label{margin-top:8px;padding-inline:10px}.photo-caption h3{font-size:14px}.photo-caption p{font-size:11px;line-height:1.75}}
+@media(max-width:800px){.film-entry{grid-template-columns:minmax(150px,34%) minmax(0,1fr);gap:0 16px}.film-review-notes{grid-template-columns:1fr}.film-stills-scroll{max-height:min(42vh,340px)}.photo-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
+@media(max-width:560px){.film-entry{grid-template-columns:1fr;padding:12px}.film-entry>.film-media{grid-column:1;grid-row:1;position:static}.film-entry>.film-media>.film-image-button{aspect-ratio:16/9!important}.film-stills-scroll{max-height:280px}.film-entry>.film-meta{grid-column:1;grid-row:2;margin:12px 2px 10px}.film-details{grid-column:1;grid-row:3}.film-synopsis{font-size:13px}.film-review-notes p{font-size:12px}.photo-strip{gap:14px 11px}.photo-note-card{padding-bottom:12px}.photo-note-card .photo-label,.photo-caption{margin-left:0;margin-right:0;padding-left:10px;padding-right:10px}.photo-note-card .photo-label{margin-top:8px;padding-inline:10px}.photo-caption h3{font-size:14px}.photo-caption p{font-size:11px;line-height:1.75}}
 
 /* Layered journal palette: matcha remains the paper, accents rotate by note. */
 :root{
@@ -82,7 +90,7 @@
 .film-review-notes span{color:#4c514d}
 
 /* Stills sit like a small, mixed stack of prints rather than a uniform tile wall. */
-.film-stills{gap:10px;padding:3px 2px 9px}
+.film-stills-scroll{gap:10px;padding:4px 10px}
 .film-still{position:relative;padding:4px;border:1px solid rgba(255,255,255,.8);border-radius:10px;background:rgba(255,255,255,.67);box-shadow:0 6px 14px rgba(44,55,47,.09);transition:transform .22s ease,box-shadow .22s ease}
 .film-still:nth-child(4n+1){transform:rotate(-1.2deg)}
 .film-still:nth-child(4n+2){transform:translateY(3px) rotate(.8deg)}
@@ -114,5 +122,5 @@
 .track-row:hover,.track-row.is-selected{background:rgba(255,255,255,.74)}
 .filter-chip{background:rgba(255,255,255,.54);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .filter-chip.is-active{background:var(--rust-dark);backdrop-filter:none}
-@media(max-width:800px){.film-review-notes{gap:0;padding-inline:2px}.film-review-notes p{margin-bottom:-2px}.film-stills{gap:8px}}
+@media(max-width:800px){.film-review-notes{gap:0;padding-inline:2px}.film-review-notes p{margin-bottom:-2px}.film-stills-scroll{gap:8px}}
 @media(prefers-reduced-motion:reduce){.film-review-notes p,.film-still,.photo-note-card{transition:none}}
