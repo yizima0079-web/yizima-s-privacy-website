@@ -2,23 +2,178 @@
 <html lang="zh-CN">
 <head>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' rx='8' fill='%23C75C32'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23FFF8EE' stroke-width='2'/%3E%3Cpath d='M16 5v4M16 23v4M5 16h4M23 16h4' stroke='%23FFF8EE' stroke-width='2'/%3E%3C/svg%3E">
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#F7F2E9">
-  <meta name="description" content="Yizima 的私人电影手帐，收藏电影片段、Vlog、摄影与音乐。"><meta property="og:title" content="Yizima 的电影手帐"><meta property="og:description" content="把喜欢的画面和声音，慢慢收进一本私人手帐。"><meta property="og:type" content="website">
-  <title>Yizima 的电影手帐</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=20261015084500"><link rel="stylesheet" href="theme-matcha.css?v=20261015084500"><script src="script.js?v=20261014232704" defer></script>
-</head><body>
-<a class="skip-link" href="#main">跳到主要内容</a><div class="paper-grain" aria-hidden="true"></div>
-<header class="site-header" id="top"><a class="brand" href="#top" aria-label="Yizima 电影手帐首页"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>YIZIMA <small>FILM JOURNAL</small></span></a><nav class="main-nav" aria-label="主要导航"><a href="#films">电影收藏</a><a href="#vlogs">影像记录</a><a href="#clips">电影片段</a><a href="#photos">摄影</a><a href="#playlist">正在听</a><a href="#about">关于这本手帐</a></nav><a class="header-note" href="#films"><span class="status-dot"></span> 慢慢翻阅 <span aria-hidden="true">↘</span></a></header>
-<main id="main">
-<section class="hero wrap" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow"><span>PERSONAL ARCHIVE</span><span class="eyebrow-line"></span><span>NO. 001—</span></p><h1 id="hero-title">把喜欢的画面，<br><em>留在这里。</em></h1><p class="hero-intro">电影、路上的光，和一些舍不得关掉的声音。<br>这不是影评，只是我的私人收藏夹。</p><div class="hero-actions"><a class="button button-primary" href="#films">翻开电影收藏 <span aria-hidden="true">↘</span></a><a class="text-link" href="#vlogs">去看影像记录 <span aria-hidden="true">→</span></a></div><div class="hero-footnote"><span class="stamp">Y.</span><span>一页一页，记住那些喜欢的时刻。</span></div></div><div class="hero-art" aria-label="桌面上的电影手帐、胶片与相机"><div class="hero-photo"></div><div class="hero-ticket"><span class="ticket-top">ADMIT ONE <b>✳</b></span><strong>私人放映</strong><span>一场只属于自己的电影</span><span class="ticket-rule"></span><span class="ticket-bottom">YIZIMA <b>№ 001</b></span></div><span class="hero-caption">a little archive of things I love</span><span class="hero-index" aria-hidden="true">01<br><i>—</i><br>∞</span></div><a class="scroll-cue" href="#films"><span class="scroll-line"></span><span>往下翻</span></a></section>
-<section class="section wrap" id="films" aria-labelledby="films-title"><div class="section-heading"><div><p class="section-kicker">THE FILM SHELF <span>01 / COLLECTION</span></p><h2 id="films-title">电影收藏<span class="heading-period">.</span></h2></div><p class="section-aside">一些反复想起的画面。<br>点开照片，可以看得更近一点。</p></div><div class="filter-row" role="group" aria-label="按电影筛选"><button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">全部收藏 <span>54</span></button><button class="filter-chip" type="button" data-filter="世之介" aria-pressed="false">横道世之介</button><button class="filter-chip" type="button" data-filter="莉莉周" aria-pressed="false">关于莉莉周的一切</button><button class="filter-chip" type="button" data-filter="河畔须臾" aria-pressed="false">河畔须臾</button><button class="filter-chip" type="button" data-filter="猜谜大叔" aria-pressed="false">猜谜大叔</button><button class="filter-chip" type="button" data-filter="轻松自由" aria-pressed="false">轻松自由</button><button class="filter-chip" type="button" data-filter="逃兵追缉令" aria-pressed="false">逃兵追缉令</button><button class="filter-chip" type="button" data-filter="卫生间的圣母像" aria-pressed="false">卫生间的圣母像</button></div><div class="film-grid" id="film-grid" aria-live="polite"></div><p class="collection-note"><span class="note-rule"></span> 所有画面来自我的私人片单与收藏 <span class="note-rule"></span></p></section>
-<section class="vlog-section" id="vlogs" aria-labelledby="vlogs-title"><div class="wrap"><div class="section-heading section-heading-light"><div><p class="section-kicker">MOVING MEMORIES <span>02 / VIDEOS</span></p><h2 id="vlogs-title">影像记录<span class="heading-period">.</span></h2></div><p class="section-aside">不止电影，也有我自己的片段。<br>按下播放，再慢慢看。</p></div><div class="vlog-grid"><article class="vlog-card"><div class="vlog-frame"><video controls preload="none" playsinline poster="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/%E4%B8%96%E4%B9%8B%E4%BB%8B%20(1).jpg" aria-label="播放 Vlog 第一篇"><source src="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/vlog%231.mp4" type="video/mp4">你的浏览器暂不支持播放视频。</video><span class="frame-label">VIDEO NOTE 01</span></div><div class="vlog-caption"><span class="vlog-number">01</span><div><h3>Vlog #1</h3><p>一段留给自己的动态记忆。</p></div><span class="vlog-arrow" aria-hidden="true">↗</span></div></article><article class="vlog-card"><div class="vlog-frame"><video controls preload="none" playsinline poster="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/%E6%B2%B3%E7%95%94%E9%A1%BB%E8%87%BE%20(1).webp" aria-label="播放 Vlog 第二篇"><source src="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/vlog%232.mp4" type="video/mp4">你的浏览器暂不支持播放视频。</video><span class="frame-label">VIDEO NOTE 02</span></div><div class="vlog-caption"><span class="vlog-number">02</span><div><h3>Vlog #2</h3><p>第二段视频收藏。</p></div><span class="vlog-arrow" aria-hidden="true">↗</span></div></article></div></div></section>
-<section class="clip-section wrap" id="clips" aria-labelledby="clips-title"><div class="section-heading"><div><p class="section-kicker">SCENES THAT STAY <span>03 / FILM CLIPS</span></p><h2 id="clips-title">舍不得快进的片段<span class="heading-period">.</span></h2></div><p class="section-aside">短短几分钟，也值得单独留一页。<br>需要时再播放，不会自动加载。</p></div><div class="clip-grid"><article class="clip-card"><div class="clip-frame"><video controls preload="none" playsinline poster="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/%E5%85%B3%E4%BA%8E%E8%8E%89%E8%8E%89%E5%91%A8%E7%9A%84%E4%B8%80%E5%88%87%20(1).png" aria-label="播放电影片段 Against"><source src="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/against.mp4" type="video/mp4">你的浏览器暂不支持播放视频。</video></div><div class="clip-caption"><span>CLIP NOTE / 01</span><h3>Against</h3></div></article><article class="clip-card"><div class="clip-frame"><video controls preload="none" playsinline poster="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/%E5%85%B3%E4%BA%8E%E8%8E%89%E8%8E%89%E5%91%A8%E7%9A%84%E4%B8%80%E5%88%87%20(3).png" aria-label="播放电影片段 Her Story"><source src="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/her%20story.mp4" type="video/mp4">你的浏览器暂不支持播放视频。</video></div><div class="clip-caption"><span>CLIP NOTE / 02</span><h3>Her Story</h3></div></article></div></section>
-<section class="interlude wrap" aria-label="一句电影手帐旁白"><span class="interlude-mark" aria-hidden="true">“</span><p>有些电影结束了，<br>却会在心里多放一会儿。</p><span class="interlude-credit">— 写在某个散场之后</span><span class="interlude-film" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></section>
-<section class="section photo-section wrap" id="photos" aria-labelledby="photos-title"><div class="section-heading"><div><p class="section-kicker">STILLS & LITTLE THINGS <span>04 / PHOTOGRAPHY</span></p><h2 id="photos-title">一帧之外<span class="heading-period">.</span></h2></div><p class="section-aside">截图之外，也收一点日常。<br>从电影走到生活，还是同一本手帐。</p></div><div class="photo-strip" id="photo-strip"></div></section>
-<section class="playlist-section" id="playlist" aria-labelledby="playlist-title"><div class="wrap playlist-layout"><div class="playlist-copy"><p class="section-kicker">SOUNDTRACK FOR SLOW DAYS <span>05 / LISTENING</span></p><h2 id="playlist-title">正在听，<br><em>也正在记。</em></h2><p>有些歌会和某一段时间绑在一起。<br>这里留一小张，我常听的播放清单。</p><p class="audio-status" id="audio-status" role="status" aria-live="polite">选择一首歌，开始播放。</p></div><div class="track-card"><div class="track-card-head"><span>NOW PLAYING / SIDE A</span><span class="vinyl-icon" aria-hidden="true">◉</span></div><div class="track-list" id="track-list"></div><audio id="audio-player" preload="none"></audio><div class="player-controls"><button type="button" id="play-toggle" class="play-button" aria-label="播放所选歌曲" disabled><span aria-hidden="true">▶</span></button><div class="player-label"><span id="current-track">还没有选择歌曲</span><small>按播放键后开始加载音频</small></div><button type="button" id="next-track" class="next-button" aria-label="播放下一首">下一首 <span aria-hidden="true">→</span></button></div></div></div></section>
-<section class="section wrap about-section" id="about" aria-labelledby="about-title"><div class="about-stamp" aria-hidden="true"><span>KEEP</span><b>LOOKING</b><span>AT THE</span><b>LIGHT</b></div><div class="about-copy"><p class="section-kicker">A NOTE FROM THE OWNER <span>06 / ABOUT</span></p><h2 id="about-title">一本还在继续的<br><em>私人手帐。</em></h2><p>这里收着我看过的电影、喜欢的声音，还有一些想留住的时刻。没有复杂的分类规则，也不需要标准答案——喜欢，就先放进来。</p><p class="about-sign">— Yizima <span>✳</span></p></div></section>
-</main><footer class="site-footer wrap"><a class="back-top" href="#top">回到第一页 <span aria-hidden="true">↑</span></a><p>MADE OF FILMS, MUSIC & SMALL MOMENTS</p><span>© YIZIMA · PERSONAL ARCHIVE</span></footer>
-<dialog class="lightbox" id="lightbox" aria-label="图片浏览"><button class="lightbox-close" type="button" aria-label="关闭图片">×</button><button class="lightbox-prev" type="button" aria-label="上一张">←</button><figure><img alt="" id="lightbox-image"><figcaption id="lightbox-caption"></figcaption></figure><button class="lightbox-next" type="button" aria-label="下一张">→</button><span class="lightbox-count" id="lightbox-count"></span></dialog>
-<div id="museUser" aria-label="当前登录用户"><span id="museUserNickname"></span><button id="museLogout" type="button">登出</button></div><a class="muse-badge" href="https://museai.im/home" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,UklGRn4DAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSJEBAAABkEPbtqk9+5z7ENu205m1jc62UdnJ0w7v6/46IiYAGUZ1xMpoKmNg9H/GgWoKBxVaZoWrCog68GqXhWOlKH7kx4RMEHi+EeSc9vpgAaiFoshRBsH2ThVzAKZM6+MMuCcf9H8O2n1LgpjvLx+fv/ngxWeMf/BaNZj/CTAxYhzz30mQMBwAhaUg23bGCRnzR0Qy4mqo2MBFy5fkqUP3Hny7vvMp+bIlHFgr8p4kD5fKU7hUnvw7yRP5oHbwsY08lQciKHgj5jb4SOlhLnmvMFRR5BE5D14aFyMCnsgNERS6x2AY3DQ+tpJ7sv2V6wi5EF4KMdhHrsxmMmfx3NnkARixUxS7QLZt3LVv/96N55DHc0PtfIwm326ZOW/+/Hkz1n3im45wrAxq3SSPzV08b8KEGYuWnCMv1oRaiGAdv3+a36N9i2pV6nVrv+jHR64HxAL+oiRaVSGz4G9TcWUUDIHCUpBz2cxsgDGqRhQF5g/LBLGBIGtmqODfRgFBSlU1sBQRTQMR2AsyjABWUDggxgEAAJAKAJ0BKiAAIAA+iTaVR6UjIiEwDACgEQlsAJ0yhHUHjHCGcAmDvW1OA+wD1NukB5gP1P6iPm5dQBz237dfA5+1X7d+1nngKtO+3eQAmTObRU3fN/qKiQZdWuniYAD+3SC8GE+j7+lkZY+ntHluUwxa9b8xQPDTLmQgBeXDG09w2SXesNTEj0x72ZYi57gpVNwXcEWoNLczDN843mJ/1+M+PMChQb5+SXmQGdAhca+6yFSuAzz7w7vJ+ENORCgyeVdJKCgEXM3yqWgOvPuY6uNiyj3I+IFf5+Pa0fDXt42o347s0r1/Ca/C9GG+zt6YxQXr2RIS49DuzF4khTPkLPV9iED1Yqkkk20wcP9rIY8/d9+baH7jqteP916hM/leYgLnNqVv+E2WUeLK+QWK5wG0KZZHE/gGhYxHgW92OCcu7ykPRxpjS5y0bat8Rx3ZWHgHpe9vVEaILtkQAVjzlZWQ7+SOPM5Ya4O5gm97CRmeMW/+Rty14O5sO6+1nk+Dir8MgQQrBJnxwJxZA/YoROrWJLHlqcUyUMnRBTeZ5iFUt8UE55xowlBczXtwBVPv0UO2r37kKIFflLLr4iiXo8DScd4fcAA=" alt="" aria-hidden="true"><span>Build by MuseWork</span></a>
-<script>(function(){const APP_ID=location.pathname.split('/')[2]||'';const userEl=document.getElementById('museUser'),nameEl=document.getElementById('museUserNickname'),logoutBtn=document.getElementById('museLogout');fetch('/app-session/me?app_id='+APP_ID).then(r=>r.ok?r.json():null).then(u=>{if(u){nameEl.textContent=u.nickname||(u.email||'').split('@')[0];userEl.style.display='';const t=document.querySelector('.muse-badge span');if(t)t.style.display='none';}}).catch(()=>{});logoutBtn.addEventListener('click',()=>fetch('/app-session/logout?app_id='+APP_ID,{method:'POST'}).then(()=>location.reload()));})();</script>
-</body></html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F7F2E9">
+  <meta name="description" content="Yizima 的私人电影手帐，收藏电影片段、Vlog、摄影与音乐。">
+  <meta property="og:title" content="Yizima 的电影手帐">
+  <meta property="og:description" content="把喜欢的画面和声音，慢慢收进一本私人手帐。">
+  <meta property="og:type" content="website">
+  <title>Yizima 的电影手帐</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261015084500">
+  <link rel="stylesheet" href="theme-matcha.css?v=20261015084500">
+  <link rel="stylesheet" href="journal-notes.css?v=20261015110500">
+  <script src="script.js?v=20261015104900" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Yizima 电影手帐首页">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>YIZIMA <small>FILM JOURNAL</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主要导航">
+          <a href="#films">电影收藏</a>
+      <a href="#vlogs">影像记录</a>
+      <a href="#clips">电影片段</a>
+      <a href="#photos">摄影</a>
+      <a href="#playlist">正在听</a>
+      <a href="#about">关于这本手帐</a>
+    </nav>
+    <a class="header-note" href="#films"><span class="status-dot"></span> 慢慢翻阅 <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>PERSONAL ARCHIVE</span><span class="eyebrow-line"></span><span>NO. 001—</span></p>
+        <h1 id="hero-title">把喜欢的画面，<br><em>留在这里。</em></h1>
+        <p class="hero-intro">电影、路上的光，和一些舍不得关掉的声音。<br>这不是影评，只是我的私人收藏夹。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#films">翻开电影收藏 <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#vlogs">去看影像记录 <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-footnote"><span class="stamp">Y.</span><span>一页一页，记住那些喜欢的时刻。</span></div>
+      </div>
+      <div class="hero-art" aria-label="桌面上的电影手帐、胶片与相机">
+        <div class="hero-photo"></div>
+        <div class="hero-ticket"><span class="ticket-top">ADMIT ONE <b>✳</b></span><strong>私人放映</strong><span>一场只属于自己的电影</span><span class="ticket-rule"></span><span class="ticket-bottom">YIZIMA <b>№ 001</b></span></div>
+        <span class="hero-caption">a little archive of things I love</span>
+        <span class="hero-index" aria-hidden="true">01<br><i>—</i><br>∞</span>
+      </div>
+      <a class="scroll-cue" href="#films"><span class="scroll-line"></span><span>往下翻</span></a>
+    </section>
+
+    <section class="section wrap" id="films" aria-labelledby="films-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">THE FILM SHELF <span>01 / COLLECTION</span></p><h2 id="films-title">电影收藏<span class="heading-period">.</span></h2></div>
+        <p class="section-aside">一些反复想起的电影。<br>展开条目，读手帐、看剧照。</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="按电影筛选">
+        <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">全部收藏 <span>7</span></button>
+        <button class="filter-chip" type="button" data-filter="世之介" aria-pressed="false">横道世之介</button>
+        <button class="filter-chip" type="button" data-filter="莉莉周" aria-pressed="false">关于莉莉周的一切</button>
+        <button class="filter-chip" type="button" data-filter="河畔须臾" aria-pressed="false">河畔须臾</button>
+        <button class="filter-chip" type="button" data-filter="猜谜大叔" aria-pressed="false">猜谜大叔</button>
+        <button class="filter-chip" type="button" data-filter="轻松自由" aria-pressed="false">轻松自由</button>
+        <button class="filter-chip" type="button" data-filter="逃兵追缉令" aria-pressed="false">逃兵追缉令</button>
+        <button class="filter-chip" type="button" data-filter="卫生间的圣母像" aria-pressed="false">卫生间的圣母像</button>
+      </div>
+      <div class="film-grid" id="film-grid" aria-live="polite"></div>
+      <p class="collection-note"><span class="note-rule"></span> 所有画面来自我的私人片单与收藏 <span class="note-rule"></span></p>
+    </section>
+
+    <section class="vlog-section" id="vlogs" aria-labelledby="vlogs-title">
+      <div class="wrap">
+        <div class="section-heading section-heading-light">
+          <div><p class="section-kicker">MOVING MEMORIES <span>02 / VIDEOS</span></p><h2 id="vlogs-title">影像记录<span class="heading-period">.</span></h2></div>
+          <p class="section-aside">不止电影，也有我自己的片段。<br>按下播放，再慢慢看。</p>
+        </div>
+        <div class="vlog-grid">
+          <article class="vlog-card">
+            <div class="vlog-frame"><video controls preload="none" playsinline poster="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/%E4%B8%96%E4%B9%8B%E4%BB%8B%20(1).jpg" aria-label="播放 Vlog 第一篇"><source src="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/vlog%231.mp4" type="video/mp4">你的浏览器暂不支持播放视频。</video><span class="frame-label">VIDEO NOTE 01</span></div>
+            <div class="vlog-caption"><span class="vlog-number">01</span><div><h3>Vlog #1</h3><p>一段留给自己的动态记忆。</p></div><span class="vlog-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="vlog-card">
+            <div class="vlog-frame"><video controls preload="none" playsinline poster="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/%E6%B2%B3%E7%95%94%E9%A1%BB%E8%87%BE%20(1).webp" aria-label="播放 Vlog 第二篇"><source src="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/vlog%232.mp4" type="video/mp4">你的浏览器暂不支持播放视频。</video><span class="frame-label">VIDEO NOTE 02</span></div>
+            <div class="vlog-caption"><span class="vlog-number">02</span><div><h3>Vlog #2</h3><p>第二段视频收藏。</p></div><span class="vlog-arrow" aria-hidden="true">↗</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="clip-section wrap" id="clips" aria-labelledby="clips-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">SCENES THAT STAY <span>03 / FILM CLIPS</span></p><h2 id="clips-title">舍不得快进的片段<span class="heading-period">.</span></h2></div>
+        <p class="section-aside">短短几分钟，也值得单独留一页。<br>需要时再播放，不会自动加载。</p>
+      </div>
+      <div class="clip-grid">
+        <article class="clip-card">
+          <div class="clip-frame"><video controls preload="none" playsinline poster="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/%E5%85%B3%E4%BA%8E%E8%8E%89%E8%8E%89%E5%91%A8%E7%9A%84%E4%B8%80%E5%88%87%20(1).png" aria-label="播放电影片段 Against"><source src="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/against.mp4" type="video/mp4">你的浏览器暂不支持播放视频。</video></div>
+          <div class="clip-caption"><span>CLIP NOTE / 01</span><h3>Against</h3></div>
+        </article>
+        <article class="clip-card">
+          <div class="clip-frame"><video controls preload="none" playsinline poster="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/%E5%85%B3%E4%BA%8E%E8%8E%89%E8%8E%89%E5%91%A8%E7%9A%84%E4%B8%80%E5%88%87%20(3).png" aria-label="播放电影片段 Her Story"><source src="https://raw.githubusercontent.com/yizima0079-web/gallery-videos/main/her%20story.mp4" type="video/mp4">你的浏览器暂不支持播放视频。</video></div>
+          <div class="clip-caption"><span>CLIP NOTE / 02</span><h3>Her Story</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="interlude wrap" aria-label="一句电影手帐旁白">
+      <span class="interlude-mark" aria-hidden="true">“</span>
+      <p>有些电影结束了，<br>却会在心里多放一会儿。</p>
+      <span class="interlude-credit">— 写在某个散场之后</span>
+      <span class="interlude-film" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+    </section>
+
+    <section class="section photo-section wrap" id="photos" aria-labelledby="photos-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">STILLS & LITTLE THINGS <span>03 / PHOTOGRAPHY</span></p><h2 id="photos-title">一帧之外<span class="heading-period">.</span></h2></div>
+        <p class="section-aside">截图之外，也收一点日常。<br>每张照片，都留着当时的感受。</p>
+      </div>
+      <div class="photo-strip" id="photo-strip"></div>
+    </section>
+
+    <section class="playlist-section" id="playlist" aria-labelledby="playlist-title">
+      <div class="wrap playlist-layout">
+        <div class="playlist-copy">
+          <p class="section-kicker">SOUNDTRACK FOR SLOW DAYS <span>04 / LISTENING</span></p>
+          <h2 id="playlist-title">正在听，<br><em>也正在记。</em></h2>
+          <p>有些歌会和某一段时间绑在一起。<br>这里留一小张，我常听的播放清单。</p>
+          <p class="audio-status" id="audio-status" role="status" aria-live="polite">选择一首歌，开始播放。</p>
+        </div>
+        <div class="track-card">
+          <div class="track-card-head"><span>NOW PLAYING / SIDE A</span><span class="vinyl-icon" aria-hidden="true">◉</span></div>
+          <div class="track-list" id="track-list"></div>
+          <audio id="audio-player" preload="none"></audio>
+          <div class="player-controls"><button type="button" id="play-toggle" class="play-button" aria-label="播放所选歌曲" disabled><span aria-hidden="true">▶</span></button><div class="player-label"><span id="current-track">还没有选择歌曲</span><small>按播放键后开始加载音频</small></div><button type="button" id="next-track" class="next-button" aria-label="播放下一首">下一首 <span aria-hidden="true">→</span></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap about-section" id="about" aria-labelledby="about-title">
+      <div class="about-stamp" aria-hidden="true"><span>KEEP</span><b>LOOKING</b><span>AT THE</span><b>LIGHT</b></div>
+      <div class="about-copy"><p class="section-kicker">A NOTE FROM THE OWNER <span>05 / ABOUT</span></p><h2 id="about-title">一本还在继续的<br><em>私人手帐。</em></h2><p>这里收着我看过的电影、喜欢的声音，还有一些想留住的时刻。没有复杂的分类规则，也不需要标准答案——喜欢，就先放进来。</p><p class="about-sign">— Yizima <span>✳</span></p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><a class="back-top" href="#top">回到第一页 <span aria-hidden="true">↑</span></a><p>MADE OF FILMS, MUSIC & SMALL MOMENTS</p><span>© YIZIMA · PERSONAL ARCHIVE</span></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="图片浏览">
+    <button class="lightbox-close" type="button" aria-label="关闭图片">×</button>
+    <button class="lightbox-prev" type="button" aria-label="上一张">←</button>
+    <figure><img alt="" id="lightbox-image"><figcaption id="lightbox-caption"></figcaption></figure>
+    <button class="lightbox-next" type="button" aria-label="下一张">→</button>
+    <span class="lightbox-count" id="lightbox-count"></span>
+  </dialog>
+
+  <div id="museUser" aria-label="当前登录用户"><span id="museUserNickname"></span><button id="museLogout" type="button">登出</button></div>
+  <a class="muse-badge" href="https://museai.im/home" target="_blank" rel="noopener noreferrer"><img src="assets/images/icon.png" alt="" aria-hidden="true"><span>Build by MuseWork</span></a>
+  <script>
+    (function(){
+      const APP_ID=location.pathname.split('/')[2]||'';
+      const userEl=document.getElementById('museUser');
+      const nameEl=document.getElementById('museUserNickname');
+      const logoutBtn=document.getElementById('museLogout');
+      fetch('/app-session/me?app_id='+APP_ID).then(r=>r.ok?r.json():null).then(u=>{
+        if(u){nameEl.textContent=u.nickname||(u.email||'').split('@')[0];userEl.style.display='';const badgeText=document.querySelector('.muse-badge span');if(badgeText)badgeText.style.display='none';}
+      }).catch(()=>{});
+      logoutBtn.addEventListener('click',()=>fetch('/app-session/logout?app_id='+APP_ID,{method:'POST'}).then(()=>location.reload()));
+    })();
+  </script>
+</body>
+</html>
