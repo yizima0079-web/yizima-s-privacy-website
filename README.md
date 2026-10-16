@@ -4,8 +4,8 @@
 
 ## 共享留言板
 
-- 首页底部留言由 Supabase 项目 `supabase-amber-paddle` 共享保存，公开留言不显示姓名，也不收集访客 IP。
-- 浏览器只用 Supabase publishable key；留言表启用 RLS，访客只能读取，通过 `submit_guestbook_message` RPC 写入，服务端按匿名浏览器 ID 限制每 30 秒提交一条。
+- 首页底部留言由 Supabase 项目 `supabase-amber-paddle` 共享保存，留言不要求姓名/邮箱，公开留言只显示内容和时间；留言表不存访客 IP。
+- 浏览器只用 Supabase publishable key；留言表启用 RLS，访客只能读取，通过 `submit_guestbook_message` RPC 写入，服务端按匿名浏览器 ID 设置 30 秒冷却（清除浏览器本地存储会重置该 ID）。
 - 留言为纯文本，长度限制 1–280 字；前端以 `textContent` 渲染。公开留言可被所有访客阅读。
 - 数据库结构与权限脚本位于 `supabase/migrations/20261016_guestbook.sql`。
 
