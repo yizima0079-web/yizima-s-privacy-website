@@ -17,7 +17,10 @@
   <link rel="stylesheet" href="theme-matcha.css?v=20261015084500">
   <link rel="stylesheet" href="journal-notes.css?v=20261016010000">
   <link rel="stylesheet" href="am02-00.css?v=20261016093000">
+  <link rel="stylesheet" href="guestbook.css?v=20261016103000">
   <script src="script.js?v=20261016010000" defer></script>
+  <script src="guestbook-config.js?v=20261016103000" defer></script>
+  <script src="guestbook.js?v=20261016103000" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -153,6 +156,23 @@
     <section class="section wrap about-section" id="about" aria-labelledby="about-title">
       <div class="about-stamp" aria-hidden="true"><span>KEEP</span><b>LOOKING</b><span>AT THE</span><b>LIGHT</b></div>
       <div class="about-copy"><p class="section-kicker">A NOTE FROM THE OWNER <span>05 / ABOUT</span></p><h2 id="about-title">一本还在继续的<br><em>私人手帐。</em></h2><p>这里收着我看过的电影、喜欢的声音，还有一些想留住的时刻。没有复杂的分类规则，也不需要标准答案——喜欢，就先放进来。</p><p class="about-sign">— Yizima <span>✳</span></p></div>
+    </section>
+
+    <section class="guestbook-section" id="guestbook" aria-labelledby="guestbook-title">
+      <div class="wrap guestbook-wrap">
+        <div class="guestbook-heading">
+          <div><p class="section-kicker">A NOTE LEFT HERE <span>06 / GUESTBOOK</span></p><h2 id="guestbook-title">留一句话，<br><em>给下一位路过的人。</em></h2></div>
+          <p class="guestbook-intro">不留姓名，只留此刻想说的话。<br>这里的便签会和每位访客共享。</p>
+        </div>
+        <form class="guestbook-form" id="guestbook-form">
+          <label class="visually-hidden" for="guestbook-input">留言内容</label>
+          <textarea id="guestbook-input" name="content" rows="3" maxlength="280" placeholder="电影、音乐，或者今天的一点心情……" required></textarea>
+          <div class="guestbook-form-foot"><span id="guestbook-count">0 / 280</span><button class="guestbook-submit" type="submit"><span>贴上便签</span><span aria-hidden="true">↗</span></button></div>
+          <p class="guestbook-status" id="guestbook-status" role="status" aria-live="polite">请友善留言。每条留言最多 280 字，同一浏览器提交后需间隔 30 秒。</p>
+        </form>
+        <div class="guestbook-list-head"><span>RECENT NOTES</span><span id="guestbook-total">正在读取留言…</span></div>
+        <div class="guestbook-list" id="guestbook-list" aria-live="polite" aria-busy="true"></div>
+      </div>
     </section>
   </main>
 
