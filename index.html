@@ -38,6 +38,7 @@
       <a href="#playlist">正在听</a>
       <a href="#about">关于这本手帐</a>
     </nav>
+    <div id="museUser" aria-label="当前登录用户" hidden><span id="museUserNickname"></span><button id="museLogout" type="button">登出</button></div>
     <a class="header-note" href="#films"><span class="status-dot"></span> 慢慢翻阅 <span aria-hidden="true">↘</span></a>
   </header>
 
@@ -186,7 +187,6 @@
     <span class="lightbox-count" id="lightbox-count"></span>
   </dialog>
 
-  <div id="museUser" aria-label="当前登录用户"><span id="museUserNickname"></span><button id="museLogout" type="button">登出</button></div>
   <a class="muse-badge" href="https://museai.im/home" target="_blank" rel="noopener noreferrer"><img src="assets/images/icon.png" alt="" aria-hidden="true"><span>Build by MuseWork</span></a>
   <script>
     (function(){
@@ -195,7 +195,7 @@
       const nameEl=document.getElementById('museUserNickname');
       const logoutBtn=document.getElementById('museLogout');
       fetch('/app-session/me?app_id='+APP_ID).then(r=>r.ok?r.json():null).then(u=>{
-        if(u){nameEl.textContent=u.nickname||(u.email||'').split('@')[0];userEl.style.display='';const badgeText=document.querySelector('.muse-badge span');if(badgeText)badgeText.style.display='none';}
+        if(u){nameEl.textContent=u.nickname||(u.email||'').split('@')[0];userEl.hidden=false;userEl.style.display='flex';const badgeText=document.querySelector('.muse-badge span');if(badgeText)badgeText.style.display='none';}
       }).catch(()=>{});
       logoutBtn.addEventListener('click',()=>fetch('/app-session/logout?app_id='+APP_ID,{method:'POST'}).then(()=>location.reload()));
     })();
