@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F7F2E9">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('yizima-theme')==='blue'?'blue':'matcha'}catch(e){document.documentElement.dataset.theme='matcha'}</script>
   <meta name="description" content="Yizima 的私人电影手帐，收藏电影片段、Vlog、摄影与音乐。">
   <meta property="og:title" content="Yizima 的电影手帐">
   <meta property="og:description" content="把喜欢的画面和声音，慢慢收进一本私人手帐。">
@@ -18,7 +19,9 @@
   <link rel="stylesheet" href="journal-notes.css?v=20261016010000">
   <link rel="stylesheet" href="am02-00.css?v=20261016093000">
   <link rel="stylesheet" href="guestbook.css?v=20261016103000">
+  <link rel="stylesheet" href="theme-blue.css?v=20261018223000">
   <script src="script.js?v=20261016010000" defer></script>
+  <script src="theme-toggle.js?v=20261018223000" defer></script>
   <script src="guestbook-config.js?v=20261016103000" defer></script>
   <script src="guestbook.js?v=20261016103000" defer></script>
 </head>
@@ -38,7 +41,13 @@
       <a href="#playlist">正在听</a>
       <a href="#about">关于这本手帐</a>
     </nav>
-    <div id="museUser" aria-label="当前登录用户" hidden><span id="museUserNickname"></span><button id="museLogout" type="button">登出</button></div>
+    <div class="header-tools">
+      <div class="theme-switch" role="group" aria-label="选择页面色调">
+        <button type="button" data-theme-choice="matcha" aria-pressed="true"><span class="theme-swatch" aria-hidden="true"></span>抹茶绿</button>
+        <button type="button" data-theme-choice="blue" aria-pressed="false"><span class="theme-swatch" aria-hidden="true"></span>蓝调</button>
+      </div>
+      <div id="museUser" aria-label="当前登录用户" hidden><span id="museUserNickname"></span><button id="museLogout" type="button">登出</button></div>
+    </div>
     <a class="header-note" href="#films"><span class="status-dot"></span> 慢慢翻阅 <span aria-hidden="true">↘</span></a>
   </header>
 

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#172827">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('yizima-theme')==='blue'?'blue':'matcha'}catch(e){document.documentElement.dataset.theme='matcha'}</script>
   <meta name="description" content="凌晨两点，岸边又传来歌声。关于 Aimer《AM02:00》、不肯睡的夜，和一段慢慢浮现的海岸。">
   <meta property="og:title" content="凌晨两点，岸边又传来歌声｜Yizima 的音乐手记">
   <meta property="og:description" content="第一次放 AM02:00，是凌晨快两点。房间里灯关着，只有屏幕亮着。">
@@ -16,6 +17,8 @@
   <link rel="stylesheet" href="theme-matcha.css?v=20261016093000">
   <link rel="stylesheet" href="journal-notes.css?v=20261016093000">
   <link rel="stylesheet" href="am02-00.css?v=20261016093000">
+  <link rel="stylesheet" href="theme-blue.css?v=20261018223000">
+  <script src="theme-toggle.js?v=20261018223000" defer></script>
 </head>
 <body class="music-essay-page">
   <a class="skip-link" href="#main">跳到正文</a>
@@ -29,7 +32,13 @@
       <a href="index.html#playlist">正在听</a>
       <a href="index.html#about">关于手帐</a>
     </nav>
-    <a class="header-note" href="index.html#playlist"><span class="status-dot"></span> 回到播放清单 <span aria-hidden="true">↗</span></a>
+    <div class="header-tools">
+      <div class="theme-switch" role="group" aria-label="选择页面色调">
+        <button type="button" data-theme-choice="matcha" aria-pressed="true"><span class="theme-swatch" aria-hidden="true"></span>抹茶绿</button>
+        <button type="button" data-theme-choice="blue" aria-pressed="false"><span class="theme-swatch" aria-hidden="true"></span>蓝调</button>
+      </div>
+      <a class="header-note" href="index.html#playlist"><span class="status-dot"></span> 回到播放清单 <span aria-hidden="true">↗</span></a>
+    </div>
   </header>
 
   <main id="main" class="essay-main">
