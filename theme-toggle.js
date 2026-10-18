@@ -10,7 +10,7 @@
       button.setAttribute('aria-pressed', String(button.dataset.themeChoice === selected));
     });
     const themeColor = document.querySelector('meta[name="theme-color"]');
-    if (themeColor) themeColor.content = selected === 'blue' ? '#eef4fa' : '#f1f3e9';
+    if (themeColor) themeColor.content = selected === 'blue' ? '#0d1829' : '#f1f3e9';
     if (persist) {
       try { localStorage.setItem('yizima-theme', selected); } catch (_) { /* Keep the current page usable when storage is unavailable. */ }
     }
