@@ -239,3 +239,16 @@
 .clip-section{background:linear-gradient(112deg,#edf1ed 0%,#f1f0ea 56%,#f5f1e8 100%)}
 .photo-section{background:linear-gradient(112deg,#eef1e8 0%,#f3f0e8 52%,#edf1eb 100%)}
 .about-section{background:linear-gradient(112deg,#e9efe5 0%,#f1f1e8 58%,#f3efe3 100%)}
+
+/* Keep scrapbook layers inside their own cards and scroll bounds. */
+.film-grid{row-gap:34px}
+.film-grid>.film-entry:nth-child(n){box-shadow:0 12px 30px rgba(35,49,43,.10)}
+.film-grid>.film-entry:nth-child(n):hover,.film-grid>.film-entry:nth-child(n):focus-within{box-shadow:0 16px 36px rgba(35,49,43,.14)}
+.film-grid>.film-entry .film-review-notes p:nth-child(n){margin:0;transform:none}
+.film-grid>.film-entry .film-review-notes{row-gap:9px}
+.film-grid>.film-entry .film-stills-scroll{padding:10px 10px 12px;clip-path:inset(0 round 12px)}
+.film-grid>.film-entry .film-stills-scroll .film-still:nth-child(n){transform:none}
+.film-grid>.film-entry .film-stills-scroll .film-still:hover{transform:translateY(-2px)}
+.film-grid>.film-entry .film-stills-scroll .film-still.is-selected{transform:none}
+@media(max-width:800px){.film-grid{row-gap:30px}}
+@media(max-width:560px){.film-grid{row-gap:26px}.film-stills-scroll{padding:9px 9px 11px}}
